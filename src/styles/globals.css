@@ -1,0 +1,299 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 14px;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #FF5722;
+  --primary-foreground: #ffffff;
+  --secondary: #FDF8F6;
+  --secondary-foreground: #1a1a1a;
+  --muted: #f8f9fa;
+  --muted-foreground: #6b7280;
+  --accent: #f1f5f9;
+  --accent-foreground: #1a1a1a;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #f9fafb;
+  --input-background: #f9fafb;
+  --switch-background: #e5e7eb;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --ring: #FF5722;
+  --chart-1: #FF5722;
+  --chart-2: #f59e0b;
+  --chart-3: #10b981;
+  --chart-4: #f97316;
+  --chart-5: #8b5cf6;
+  --radius: 0;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #FF5722;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f8f9fa;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #FF5722;
+  
+  /* Theme colors */
+  --dark-hero: #1B0D2B;
+  --light-cream: #FDF8F6;
+  --zapier-orange: #FF5722;
+}
+
+.dark {
+  --background: #0f0f0f;
+  --foreground: #fafafa;
+  --card: #1a1a1a;
+  --card-foreground: #fafafa;
+  --popover: #1a1a1a;
+  --popover-foreground: #fafafa;
+  --primary: #FF5722;
+  --primary-foreground: #ffffff;
+  --secondary: #262626;
+  --secondary-foreground: #fafafa;
+  --muted: #171717;
+  --muted-foreground: #a1a1aa;
+  --accent: #262626;
+  --accent-foreground: #fafafa;
+  --destructive: #dc2626;
+  --destructive-foreground: #fafafa;
+  --border: #2a2a2a;
+  --input: #1a1a1a;
+  --input-background: #1a1a1a;
+  --switch-background: #262626;
+  --ring: #FF5722;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --chart-1: #FF5722;
+  --chart-2: #f59e0b;
+  --chart-3: #10b981;
+  --chart-4: #f97316;
+  --chart-5: #8b5cf6;
+  --sidebar: #0f0f0f;
+  --sidebar-foreground: #fafafa;
+  --sidebar-primary: #FF5722;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #fafafa;
+  --sidebar-border: #2a2a2a;
+  --sidebar-ring: #FF5722;
+
+  /* Dark theme specific colors */
+  --dark-hero: #0f0f0f;
+  --light-cream: #1a1a1a;
+  --zapier-orange: #FF5722;
+  
+  /* Additional dark theme colors */
+  --dark-surface: #141414;
+  --dark-surface-hover: #1f1f1f;
+  --dark-border-subtle: #2a2a2a;
+  --dark-text-primary: #fafafa;
+  --dark-text-secondary: #a1a1aa;
+  --dark-text-muted: #737373;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Theme colors */
+  --color-dark-hero: var(--dark-hero);
+  --color-light-cream: var(--light-cream);
+  --color-zapier-orange: var(--zapier-orange);
+  --color-dark-surface: var(--dark-surface);
+  --color-dark-surface-hover: var(--dark-surface-hover);
+  --color-dark-border-subtle: var(--dark-border-subtle);
+  --color-dark-text-primary: var(--dark-text-primary);
+  --color-dark-text-secondary: var(--dark-text-secondary);
+  --color-dark-text-muted: var(--dark-text-muted);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    border-radius: 0 !important;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* Smooth transitions for theme changes */
+  * {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.3;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.6;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.4;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.4;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.4;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* Scrollbar styling */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Force zero border radius on all elements */
+* {
+  border-radius: 0 !important;
+}
+
+/* Override any Tailwind rounded classes */
+.rounded,
+.rounded-sm,
+.rounded-md,
+.rounded-lg,
+.rounded-xl,
+.rounded-2xl,
+.rounded-3xl,
+.rounded-full,
+.rounded-t,
+.rounded-r,
+.rounded-b,
+.rounded-l,
+.rounded-tl,
+.rounded-tr,
+.rounded-br,
+.rounded-bl {
+  border-radius: 0 !important;
+}
+
+/* Dark theme specific styles */
+.dark {
+  /* Ensure all sections use dark theme backgrounds */
+  section {
+    background-color: var(--background);
+  }
+  
+  /* Override any remaining blue colors in dark mode */
+  .text-blue-500,
+  .text-blue-400,
+  .text-blue-600,
+  .bg-blue-500,
+  .bg-blue-400,
+  .bg-blue-600,
+  .border-blue-500,
+  .border-blue-400,
+  .border-blue-600 {
+    color: var(--primary) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+  }
+  
+  /* Ensure blue hover states use primary color */
+  .hover\:text-blue-500:hover,
+  .hover\:bg-blue-500:hover,
+  .hover\:border-blue-500:hover {
+    color: var(--primary) !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+  }
+}
