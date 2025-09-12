@@ -13,7 +13,6 @@ export function GrowthPlatform() {
       id: 'solar-energy',
       name: 'Solar Energy',
       icon: <Sun className="w-4 h-4" />,
-      title: '',
       subtitle: '',
       title: 'Smart Solar Automation',
       description: 'Deploy IoT systems, automate energy processes, and gain real-time insights across your solar operations.',
